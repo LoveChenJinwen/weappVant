@@ -1,0 +1,6 @@
+<!--custom-tab-bar/index.wxml-->
+<van-tabbar active="{{ selected }}" bind:change="onChange" class="tabbar">
+  <van-tabbar-item wx:for="{{ list }}" wx:key="index" icon="{{ item.iconPath }}">
+    {{ item.text }}
+  </van-tabbar-item>
+</van-tabbar>

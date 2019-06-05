@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/republic/republic",
+    "pages/share/share",
+    "pages/examine/examine",
+    "pages/setting/setting"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序展示当前位置"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f2826a",
+    "navigationBarTitleText": "共享美食",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/republic/republic"
+      },
+      {
+        "pagePath": "pages/share/share"
+      },
+      {
+        "pagePath": "pages/examine/examine"
+      },
+      {
+        "pagePath": "pages/setting/setting"
+      }
+    ]
+  },
+  "usingComponents": {
+  },
+  "sitemapLocation": "sitemap.json"
+}

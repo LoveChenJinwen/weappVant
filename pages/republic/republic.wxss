@@ -1,0 +1,74 @@
+/* pages/republic/republic.wxss */
+.public-top {
+  position: fixed;
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f2826a;
+  width: 100%;
+  padding: 0 20rpx;
+  color: #fff;
+  z-index: 9999;
+}
+.loading-top {
+  text-align: center;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  margin-top: 100rpx;
+}
+.loading-bottom {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 60px;
+  bottom: 0;
+}
+.location {
+  margin-right: 10rpx;
+}
+.search-input {
+  padding: 2rpx 8rpx !important;
+  border-radius: 20rpx;
+  opacity: 0.8;
+  margin-left: 10rpx
+}
+.swiper-part {
+  text-align: center;
+  padding-top: 80rpx;
+  width: 100%;
+}
+.slide-image {
+  width: 100%;
+}
+.item-block {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+  align-items: center;
+}
+.item-image {
+  width: 80px;
+  height: 60px;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.item-title {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0 5px;
+  text-align: justify;
+}
+.item-add {
+  width: 100px;
+  flex-shrink: 0;
+}
+.item-addr label {
+ overflow:hidden;
+ white-space:nowrap;
+ text-overflow:ellipsis;
+ width: 100px;
+ display: block;
+}

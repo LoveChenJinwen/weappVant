@@ -1,0 +1,53 @@
+<!--pages/republic/republic.wxml-->
+<view>
+  <view class='public-top'>
+    <view><van-icon name="location-o" class="location"></van-icon>未登录</view>
+    <view class='search'>
+      <van-search
+        value="{{ search }}"
+        placeholder="请输入搜索关键词"
+        bind:search="onSearch"
+        bind:cancel="onCancel"
+        custom-class="search-input"
+        input-class="search-field"
+      />
+    </view>
+  </view>
+  <view class='loading-top' wx:if="{{top}}">
+    <van-loading type="spinner" />
+  </view>
+  <view class="swiper-part">
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" >
+          </image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <van-tabs swipeable>
+    <van-tab title="离我最近"></van-tab>
+    <van-tab title="最近更新"></van-tab>
+  </van-tabs>
+  <scroll-view>
+    <view wx:for="{{list}}" wx:key="index" class='item-block'>
+      <image src="{{item.image}}" class='item-image'></image>
+      <view class="item-title van-multi-ellipsis--l3">
+        {{ item.detail }}
+      </view>
+      <view class="item-addr">
+        <label >
+          {{ item.addr }}
+        </label>
+        <label>
+          {{ item.time }}
+        </label>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='loading-bottom' wx:if="{{bottom}}">
+    <van-loading type="spinner" />
+  </view>
+</view>

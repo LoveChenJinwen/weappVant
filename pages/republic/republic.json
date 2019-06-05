@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-icon": "../../miniprogram_npm/vant-weapp/icon/index",
+    "van-search": "../../miniprogram_npm/vant-weapp/search/index",
+    "van-tabs": "../../miniprogram_npm/vant-weapp/tabs/index",
+    "van-tab": "../../miniprogram_npm/vant-weapp/tab/index",
+    "van-loading": "../../miniprogram_npm/vant-weapp/loading/index"
+  }
+}
